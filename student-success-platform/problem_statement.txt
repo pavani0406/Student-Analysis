@@ -1,0 +1,76 @@
+Smart Campus Analytics: Predict, Optimize & Improve Student Success
+1. Background
+Colleges generate large amounts of data through attendance, internal assessments, examinations, LMS activity, placement participation, extracurricular activities, and student feedback. However, this data is often stored in disconnected systems and is rarely used proactively.
+
+2. Challenge Statement
+Build an Analytics & AI-powered Student Success Platform that can identify students who may require intervention and help college administrators take data-driven actions.
+
+Move beyond simply building a dashboard. Use analytics and AI to convert student data into actionable insights and decision intelligence.
+
+3. Core Scope
+Data Integration
+Bring student data from multiple sources into one unified student view, including:
+
+Academic
+Attendance
+LMS
+Engagement
+Placement
+Skills
+Feedback
+Student Success Score
+Create a Student Success Score using relevant academic and engagement indicators.
+
+At-Risk Identification
+Identify students who may be at risk of:
+
+Poor academic performance
+Poor placement outcomes
+Interactive Dashboard
+Build an interactive dashboard for faculty and administrators showing:
+
+Student Success Scores
+Risk flags
+Key trends
+Relevant student insights
+Suggested Data
+Data Category	Examples
+Academic	CGPA, marks, backlogs, subject performance
+Attendance	Overall %, subject-wise attendance
+LMS	Login frequency, assignment completion
+Engagement	Events, clubs, hackathons, certifications
+Placement	Aptitude score, coding score, mock interviews
+Skills	Technical and soft-skill assessments
+Feedback	Student satisfaction, faculty feedback
+4. Bonus Features
+Student Segmentation
+Group students into meaningful segments, for example:
+
+High academic performance but low placement readiness
+Other segments that can support targeted interventions
+Explainable Score
+Show which indicators contribute most to each student's:
+
+Success Score
+Risk flag
+5. Deliverables
+Working dashboard prototype built on the integrated student data.
+Short note explaining the Student Success Score, including the indicators used and how they are combined.
+Short demo or a few slides showing the approach and key insights.
+6. Evaluation Criteria — 100 Points
+Criterion	Weight	What Judges Look For
+Data Integration & Analysis	30%	Quality of integration across sources, data cleaning, and insights drawn from the combined data
+Success Score & Risk Identification	25%	Relevant indicators, sensible scoring logic, and clear identification of at-risk students
+Dashboard & Visualization	25%	Interactive, clear, and useful for faculty and administrators
+Problem Understanding	10%	Understanding of the campus context and the needs of faculty and administrators
+Presentation & Demo	10%	Working prototype demonstrated clearly through a short demo or a few slides
+7. Bonus Credit
+Bonus credit may be earned for:
+
+Student Segmentation: Meaningful student groups that support targeted action.
+Explainable Score: Visible drivers behind each Success Score and risk flag.
+Bonus credit is added within the relevant evaluation criteria:
+
+Segmentation → Success Score & Risk Identification
+Explainable Score → Dashboard & Visualization
+Bonus credit is capped at approximately 5–10 points in total.
