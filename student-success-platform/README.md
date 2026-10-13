@@ -24,7 +24,11 @@ npm run dev
 
 The API serves synthetic demo data by default. CSV uploads are validated, scored, and kept in process memory under an isolated dataset ID; they are lost when the Render process restarts and are not shared between instances.
 
-## Deploy
+## Deploy on Netlify
+
+The repository root `netlify.toml` builds the dashboard from `frontend/` and deploys the API as a Netlify Function (`frontend/netlify/functions/api.mts`, a TypeScript port of `backend/main.py`) served from the same site at `/api/*`. No separate backend or `VITE_API_URL` is needed. Uploaded CSV datasets are stored in Netlify Blobs. Set `GROQ_API_KEY` (and optionally `GROQ_MODEL`) in the Netlify environment variables to enable AI-written intervention plans; otherwise the rule-based plan is returned.
+
+## Deploy on Vercel and Render
 
 1. Push the repository to GitHub.
 2. Create a Render Web Service with root directory `backend`, build command `pip install -r requirements.txt`, and start command `uvicorn main:app --host 0.0.0.0 --port $PORT` (the included `Procfile` provides this command). Set `FRONTEND_ORIGIN` to the exact Vercel production origin. Optionally set `GROQ_API_KEY` and `GROQ_MODEL` in Render's environment settings.
