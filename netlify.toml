@@ -1,0 +1,7 @@
+# The deployable site is the Vite/React dashboard in student-success-platform/frontend.
+# The FastAPI backend (student-success-platform/backend) is hosted separately; point the
+# dashboard at it with the VITE_API_URL environment variable in Netlify.
+[build]
+  base = "student-success-platform/frontend"
+  command = "npm install && npm run build"
+  publish = "dist"
