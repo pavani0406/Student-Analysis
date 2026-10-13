@@ -1,0 +1,6 @@
+# The site is the Vite/React dashboard in student-success-platform/frontend. Its API runs as the
+# Netlify Function in student-success-platform/frontend/netlify/functions/api.mts, served at /api/*.
+[build]
+  base = "student-success-platform/frontend"
+  command = "npm install && npm run build"
+  publish = "dist"

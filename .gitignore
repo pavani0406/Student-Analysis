@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.netlify/
+__pycache__/
+*.pyc
+.env
+.env.local
+.streamlit/secrets.toml

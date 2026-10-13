@@ -1,21 +1,14 @@
 import type { Filters, Overview, StudentDetail, UploadResult } from './types'
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
+// Defaults to the Netlify Function served from the same origin; VITE_API_URL can point at an external API.
+const API_BASE_URL = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  if (!API_BASE_URL) {
-    throw new Error('Set VITE_API_URL to the Render API origin, then reload the dashboard.')
-  }
-
   let response: Response
   try {
     response = await fetch(`${API_BASE_URL}${path}`, init)
   } catch {
-    throw new Error(
-      API_BASE_URL
-        ? 'Could not reach the analytics API. Check the backend status and CORS settings.'
-        : 'Set VITE_API_URL to the Render API origin, then reload the dashboard.',
-    )
+    throw new Error('Could not reach the analytics API. Check the backend status and CORS settings.')
   }
 
   if (!response.ok) {
